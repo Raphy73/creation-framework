@@ -1130,10 +1130,14 @@ section {
   overflow: hidden;
   width: 180px;
   border-radius: 50%;
+  height: 180px;
 }
 
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team .member:hover {
@@ -1853,4 +1857,8 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+#hero.hero-contributors {
+    height: 300px!important;
 }

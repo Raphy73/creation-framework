@@ -51,6 +51,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#comparisons">Comparisions</a></li>
           <li><a class="nav-link" href="http://localhost:7071/contributeurs">Contributors</a></li>
+          <li><a class="getstarted" href="http://localhost:7071/start">Getting started</a></li>
       </nav><!-- .navbar -->
 
     </div>
@@ -82,27 +83,39 @@
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/1-client.png" class="img-fluid" alt="">
+            <a href="{{ partner1.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner1.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/2-client.png" class="img-fluid" alt="">
+            <a href="{{ partner2.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner2.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/3-client.png" class="img-fluid" alt="">
+            <a href="{{ partner3.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner3.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/4-client.png" class="img-fluid" alt="">
+            <a href="{{ partner4.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner4.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/5-client.png" class="img-fluid" alt="">
+            <a href="{{ partner5.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner5.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="/template/assets/img/clients/6-client.png" class="img-fluid" alt="">
+            <a href="{{ partner6.website }}" target="_blank">
+                <img src="/template/assets/img/clients/{{ partner6.nameImg }}.png" class="img-fluid" alt="">
+            </a>
           </div>
 
         </div>
