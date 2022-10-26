@@ -1,0 +1,4 @@
+<h1>Lajavel - V.0.0.0.1</h1>
+<p>Le createur du framework est : {{ person1.getFirstnameAndLastname() }}</p>
+
+<p>En collaboration avec : {{ person2.firstName }}</p>
