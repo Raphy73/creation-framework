@@ -1,4 +1,4 @@
-package app;
+package app.Controller;
 
 import lajavel.Controller;
 import lajavel.Response;

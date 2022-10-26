@@ -1,5 +1,6 @@
-package app;
+package app.Controller;
 
+import app.Model.Contributor;
 import lajavel.*;
 
 import java.lang.reflect.InvocationTargetException;

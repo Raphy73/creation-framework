@@ -1,4 +1,4 @@
-package lajavel;
+package app.Model;
 
 public class Partner {
     public String nameImg;

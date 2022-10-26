@@ -3,7 +3,10 @@ package app;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URISyntaxException;
-import java.util.Map;
+
+import app.Controller.ContributorController;
+import app.Controller.GettingStartedController;
+import app.Controller.IndexController;
 import lajavel.*;
 
 public class Main {

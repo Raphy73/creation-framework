@@ -1,4 +1,4 @@
-package lajavel;
+package app.Model;
 
 public class Contributor {
     public String firstName;
