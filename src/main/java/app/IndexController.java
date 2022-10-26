@@ -19,4 +19,15 @@ public class IndexController extends Controller {
                         Map.entry("person2", person2))
         );
     }
+
+    public void test(Response response) throws NoSuchFieldException, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
+        Person person1 = new Person("Rapha", "Beaudet");
+        Person person2 = new Person("Sam", "Trcz");
+
+        response.context.html(
+                View.make("testtest",
+                        Map.entry("person1", person1),
+                        Map.entry("person2", person2))
+        );
+    }
 }

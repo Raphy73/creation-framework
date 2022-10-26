@@ -1,6 +1,7 @@
 package lajavel;
 
 import io.javalin.Javalin;
+import io.javalin.http.staticfiles.Location;
 
 public final class Application { // On a créé un singleton ici !
     public enum Mode {
@@ -22,7 +23,9 @@ public final class Application { // On a créé un singleton ici !
     private Application(int port, Mode mode)
     {
         this.port = port;
-        this.server = Javalin.create().start(this.port);
+        this.server = Javalin.create(config -> {
+            config.addStaticFiles("/public", Location.CLASSPATH);
+        }).start(this.port);
         Application.mode = mode;
     }
 
