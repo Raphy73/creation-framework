@@ -12,6 +12,7 @@ public class Main {
         Application app = Application.start(7071, Application.Mode.DEVELOPMENT);
 
         Route.register(HttpVerb.GET, "/", IndexController.class, "index");
-        Route.register(HttpVerb.GET, "/test", IndexController.class, "test");
+        Route.register(HttpVerb.GET, "/contributeurs", ContributorController.class, "index");
+        Route.register(HttpVerb.GET, "/start", GettingStartedController.class, "index");
     }
 }
