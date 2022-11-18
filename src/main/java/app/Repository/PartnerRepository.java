@@ -2,8 +2,6 @@ package app.Repository;
 
 import app.Model.Partner;
 
-import javax.servlet.http.Part;
-import java.util.ArrayList;
 import java.util.List;
 
 public final class PartnerRepository {
@@ -29,13 +27,13 @@ public final class PartnerRepository {
         }
         return instance;
     }
-    public static List<Partner> findAll()
-    {
-        return PartnerRepository.getInstance().allTheElements;
-    }
 
     public static Partner findOne(int id)
     {
         return PartnerRepository.getInstance().allTheElements.get(id);
+    }
+    public static List<Partner> findAll()
+    {
+        return PartnerRepository.getInstance().allTheElements;
     }
 }
