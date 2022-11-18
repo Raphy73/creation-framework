@@ -39,7 +39,24 @@ public class View
 
         matcher.appendTail(sb);
 
-        return sb.toString();
+        StringBuffer sb2 = replaceCssFiles(sb);
+
+        return sb2.toString();
+    }
+
+    private static StringBuffer replaceCssFiles(StringBuffer sb)
+    {
+        StringBuffer sb2 = new StringBuffer();
+        Matcher cssMatcher = Pattern.compile("\\{%(.*?)%\\}").matcher(sb.toString());
+
+        while (cssMatcher.find()) {
+            String cssFile = cssMatcher.group(1).replaceAll("\\s", ""); // Remove space
+            cssMatcher.appendReplacement(sb2, "/template/assets/" + cssFile + ".css");
+        }
+
+        cssMatcher.appendTail(sb2);
+
+        return sb2;
     }
 
     private static String getViewContentFromName(String viewName)
