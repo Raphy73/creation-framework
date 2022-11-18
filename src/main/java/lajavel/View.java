@@ -39,6 +39,13 @@ public class View
 
         matcher.appendTail(sb);
 
+        StringBuffer sb2 = replaceCssFiles(sb);
+
+        return sb2.toString();
+    }
+
+    private static StringBuffer replaceCssFiles(StringBuffer sb)
+    {
         StringBuffer sb2 = new StringBuffer();
         Matcher cssMatcher = Pattern.compile("\\{%(.*?)%\\}").matcher(sb.toString());
 
@@ -49,7 +56,7 @@ public class View
 
         cssMatcher.appendTail(sb2);
 
-        return sb2.toString();
+        return sb2;
     }
 
     private static String getViewContentFromName(String viewName)
